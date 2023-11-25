@@ -127,7 +127,7 @@
          
                      // Check if birthdayDate is a valid date
                      if (!isNaN(birthdayDate.getTime())) {
-                         const calculationDate = "2003-01-01"; // Change this date as needed
+                         const calculationDate = "2023-11-24"; // Change this date as needed
          
                          const age = calculateAge(birthdayDate, calculationDate);
                          birthdayTooltip.textContent = `As of ${calculationDate}, this contact is ${age} years old.`;
@@ -179,7 +179,8 @@
             style="vertical-align: middle;" />
          <span class="headerText">Chatter</span>
          <div class="crowley">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Product of <font style="font-family: verdana;">©</font> Cipher Corp
+            Product of <font style="font-family: verdana;">©</font> The Cipher
+            Corporation
          </div>
          <span class="absolutemoving">
          <input type="text" id="myInput" onkeyup="filterTable()"
@@ -200,9 +201,8 @@
                   const teamDescriptions = {
                       "Cipher Corp": "The Cipher Corporation is a company made by CEO and Founder Fernando Cypher. The company aims to bring the future to the present, exciting the world and trainers alike with new inventions to help their Pokémon journey be the best that it can be. They specialize in medicinal products, technological advancements, and have been the proud leaders of the new Rotom Phone wave.",
 					  "International Police": "The International Police,also referred to as the Global Police, is a worldwide law enforcement agency in the Pokémon world dedicated to stopping villains around the world.",
-					  "Pokémon League": "The Pokémon League is a group that organizes Pokémon competitions for registered Pokémon Trainers. It serves as an umbrella that oversees the regional Leagues.There are ten known regional Leagues under the Pokémon League: the Indigo League in Kanto, the Orange League in the Orange Archipelago, the Johto League in Johto, the Hoenn League in Hoenn, the Sinnoh League in Sinnoh, the Unova League in Unova, the Kalos League in Kalos, the Alola League in Alola, the Galar League in Galar, and the Paldea League in Paldea. In order to participate in regional competitions, Trainers must acquire a certain number of Gym Badges signifying the defeat of that region's Gym Leaders, or in the case of Alola, complete the island challenge.",
-                      "No Membership": "This contact does not have membership in any teams recognized by Your Region.",
-					 // Add more teams and descriptions as needed
+                      "No Membership": "This contact does not have membership in any teams recognized by Your Region.", 
+					// Add more teams and descriptions as needed
                   };
                   // Verified Badges
                   const verifiedBadges = {
@@ -211,7 +211,6 @@
                       "verified-officer": "This account is notable because it has been verified as a member of the olice Department.",
                       "verified-ranger": "This account is notable because it has been verified as a member of the Pokémon Rangers.",
                       "verified-corporate": "This account is notable because it has been verified as a corporate or business entity.",
-					  "verified-zeta": "This user is transmasc!",
 					  "verified-champion": "This account is notable because it has been verified as a concurrently-active regional Champion.",
                       // Add more badges and descriptions as needed
                   };
@@ -348,7 +347,7 @@
                   name: "ayame",
                   tag: "hoshi_no_ayame",
                   gymBadges: ["Gym_Crescent_Badge", "Gym_Simple_Badge", "Gym_Solar_Badge", "Gym_Venom_Badge"],
-                  birthday: "No Birthday Entered",
+                  birthday: "Jan. 19th, 2004",
                   team: ["No Membership"],
                   statusMessage: "O’ profound stars bless us with your knowledge! Trainer, Prophet, and Cake Lover! I’m Ayame Endo! ✨",
                   ownership: [
@@ -384,33 +383,12 @@
 				  doNotDisturb: true
                   },
                   {
-                  art: "icons/question.png",
-                  name: "Empty Contact 3",
-                  tag: "put-your-tag-here",
-                  gymBadges: [],
-                  birthday: "No Birthday Entered",
-                  team: ["No Membership"],
-                  statusMessage: "If online is false, the contact will be set to Offline. If gpsEnabled is false, the contact will be set to GPS Disabled.",
-                  ownership: [
-                  { name: "Player 1", owned: true },
-                  { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: true },
-                  { name: "Player 4", owned: true },
-                  { name: "Player 5", owned: true },
-                  ],
-                  online: false,
-                  gpsEnabled: false,
-				  noSignal: false,
-				  doNotDisturb: false
-                  },
-                  {
-                  art: "icons/question.png",
+                  art: "icons/ZetaIcon.png",
                   name: "ƶ",
                   tag: "hydromedas",
-				  verifiedBadge: "verified-zeta"
                   gymBadges: ["Gym_Crescent_Badge", "Gym_Simple_Badge", "Gym_Solar_Badge", "Gym_Venom_Badge"],
-                  birthday: "Dec. 18th, 2003",
-                  team: ["he/they"],
+                  birthday: "Nov. 18th, 2003",
+                  team: ["No Membership"],
                   statusMessage: "福 .  for you, i'd lose it all ! ",
                   ownership: [
                   { name: "Akira", owned: false },
@@ -419,8 +397,28 @@
                   { name: "PSI", owned: false },
                   { name: "Salty", owned: false },
                   ],
+                  online: false,
+                  gpsEnabled: false,
+				  noSignal: true,
+				  doNotDisturb: true
+                  },
+                  {
+                  art: "icons/RikaIcon.png",
+                  name: "𝐑𝐈𝐊𝐀",
+                  tag: "chicorika",
+				  verifiedBadge: "verified-champion",
+                  birthday: "Dec. 29th, 2000",
+                  team: ["Pokémon League"],
+                  statusMessage: "𝐰𝐨𝐫𝐥𝐝 𝐜𝐡𝐚𝐦𝐩𝐢𝐨𝐧 𝟐𝟎𝟐𝟑. 𝐮𝐧𝐨𝐯𝐚 𝐥𝐞𝐚𝐠𝐮𝐞 𝐜𝐡𝐚𝐦𝐩𝐢𝐨𝐧. 𝐥𝐞𝐚𝐠𝐮𝐞 𝐩𝐡𝐨𝐭𝐨𝐠𝐫𝐚𝐩𝐡𝐞𝐫.",
+                  ownership: [
+                  { name: "Akira", owned: false },
+                  { name: "Kris", owned: false },
+                  { name: "Mika", owned: false },
+                  { name: "PSI", owned: false },
+                  { name: "Salty", owned: false },
+                  ],
                   online: true,
-                  gpsEnabled: true,
+                  gpsEnabled: false,
 				  noSignal: true,
 				  doNotDisturb: true
                   },
